@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="refresh" content="10;url = index.html" /> //10秒后跳到index.html//
+	<title>Document</title>
+
+</head>
+<body>
+
+<h1>My First Web Page</h1>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">点击这里</button>
+
+<script>
+function myFunction()
+{
+document.getElementById("demo").innerHTML="My First JavaScript Function";
+}
+</script>
+
+
+<p id="myPar">I am a paragraph.</p>
+<div id="myDiv">I am a div.</div>
+
+<p>
+<button type="button" onclick="myFunction1()">点击这里</button>
+</p>
+
+<script>
+function myFunction1()
+{
+document.getElementById("myPar").innerHTML="Hello World";
+document.getElementById("myDiv").innerHTML="How are you?";
+}
+</script>
+<p>当您点击上面的按钮时，两个元素会改变。</p>
+<p>点击这里来创建变量，并显示结果。</p>
+<button onclick="myFunction2()">点击这里</button>
+
+<p id="demo2"></p>
+
+<script>
+function myFunction2()
+{
+var carname="Volvo";
+var carname;                               //carname的值不会丢失；
+document.getElementById("demo2").innerHTML=carname;
+}
+</script>
+
+<p>假设 y=5，计算 x=y+2，并显示结果。</p>
+<button onclick="myFunction4()">点击这里</button>
+
+<p id="demo4"></p>
+
+<script>
+function myFunction4()
+{
+var y=5;
+var x=y+2;
+var demoP=document.getElementById("demo4");
+demoP.innerHTML="x=" + x;
+}
+</script>
+
+<script>
+var person={
+firstname : "Bill",          /*对象由花括号分隔。在括号内部，对象的属性以名称和值对的形式 (name : value) 来定义。属性由逗号分隔：*/
+lastname  : "Gates",
+id        :  5566
+};
+document.write(person.lastname + "<br />");
+document.write(person["lastname"] + "<br />");
+</script>
+<p></p>
+<script>
+var person;
+var car="Volvo";
+var x=car.length;              //获取长度  x=5；
+var y=car.toUpperCase();       //转换成大写；
+document.write(person + "<br />");
+document.write(car + "<br />");
+document.write(x + "<br />");     //
+document.write(y + "<br />");  
+var car=null
+document.write(car + "<br />");
+
+
+var carname=new String;
+var x=      new Number;          //声明新变量时，可以使用关键词 "new" 来声明其类型：
+var y=      new Boolean; 
+var cars=   new Array;         //JavaScript 变量均为对象。声明一个变量时，就创建了一个新的对象。
+var person= new Object;                   //JavaScript 中的所有事物都是对象：字符串、数字、数组、日期，等等。在 JavaScript 中，对象是拥有属性和方法的数据。
+</script>
+
+
+<script>
+function myFunction5()
+{
+alert("Hello World!");
+}
+</script>
+<button onclick="myFunction5()">点击这里</button>
+
+
+<p>点击这个按钮，来调用带参数的函数。</p>
+
+<button onclick="myFunction6('Bill Gates','CEO')">点击这里</button>
+
+<script>
+function myFunction6(name,job)
+{
+alert("Welcome " + name + ", the " + job);
+}
+</script>
+
+<h1 onclick="this.innerHTML='谢谢!'">请点击该文本</h1>
+
+
+<script>
+function changetext(id)
+{
+id.innerHTML="谢谢!";
+}
+</script>
+
+<h1 onclick="changetext(this)">请点击该文本</h1>
+
+
+<div onmousedown="mDown(this)" onmouseup="mUp(this)" style="background-color:green;color:#ffffff;width:90px;height:20px;padding:40px;font-size:12px;">请点击这里</div>
+
+<script>
+function mDown(obj)
+{
+obj.style.backgroundColor="#1ec5e5";
+
+obj.innerHTML="请释放鼠标按钮"
+}
+
+function mUp(obj)
+{
+obj.style.backgroundColor="green";
+
+obj.innerHTML="请按下鼠标按钮"
+}
+</script>
+<p>
+</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+funtion()构造函数与函数直接变量
+</body>
+</html>

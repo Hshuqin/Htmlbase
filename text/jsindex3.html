@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body onkeydown="maskingKeyboard()" >
+
+<script>
+function maskingKeyboard(){
+	if(event.keyCode==8){
+		event.keyCode=0;
+		event.returnValue=false;
+		alert("当前设置不允许使用退格键");
+	}
+	if(event.keyCode==13){
+		event.keyCode=0;
+		evnet.returnValue=false;
+		alert("当前设置不允许使用回车键");
+	}
+	if(event.keyCode==116){
+		event.keyCode=0;
+		event.returnValue=false;
+		alert("当前设置不允许使用F5刷新键");
+	}
+	if((event.altKey)&&((window.event.keyCode==37)||(window.evnet.keyCode==39))){
+		event.returnValue=false;
+		alert("当前设置不允许使用Alt+方向键<--或方向键-->");
+	}
+	if((event.ctrlKey)&&(evnet.keyCode==78)){
+		event.returnValue=false;
+		alert("当前设置不允许使用Ctrl+N新建IE窗口");
+	}
+	if((event.shiftKey)&&(event.keyCode==121)){
+		event.returnValue=false;
+		alert("当前设置不允许使用Shift+F10键");
+	}
+}	
+function rightKey(){
+	if(event.button==){
+		event.returnValue=false;
+		alert("禁止使用鼠标右键！");
+	}
+}
+</script>
+	<h1 document.onmousedown="rightKey()">Function()构造函数与函数直接量</h1>
+</body>
+</html>

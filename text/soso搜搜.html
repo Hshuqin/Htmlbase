@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>soso搜搜</title>
+	<style>
+	p{
+		margin: 0px;
+		padding:0px;
+	}
+	#div{
+		margin: 0px auto;
+		font-size: 12px;
+		padding:0px;
+		border-bottom: 1px solid #00c;
+		background: #eee;
+		width: 800px;height:18px;
+	}
+
+	div li{
+		float:left;
+		list-style-type: none;
+		margin: 0px;
+		padding:0px;
+		width:40px;
+	}
+	div li a{
+		display: block;
+		text-decoration: underline;
+		padding:4px 0px 0px 0px;
+		margin: none;
+		font-size: 13px;
+	}
+	div li a:link,div li a:visited{
+		color:#004276;
+	}
+	div li#h{
+		width: 180px;height: 18px;
+	}
+	div li#more{
+		width: 50px;height: 18px;
+	}
+	#s{
+		background-color: #006EB8;
+		width: 430px;
+	}
+	.text{height: 40px;width: auto;}
+
+	</style>
+</head>
+<body>
+	<center>
+	<br><img src="images/soso.jpg" width="350" height="150"><br><br><br><br>
+	<div class="text">
+		<div style="height: 100%;width: 500px;margin: 0 auto;">
+			<ul>
+				<!-- <li id=h></li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li> -->
+				<li><a href="#">网页</a></li>
+				<li><a href="#">图片</a></li>
+				<li><a href="#">视频</a></li>
+				<li><a href="#">音乐</a></li>
+				<li><a href="#">搜吧</a></li>
+				<li><a href="#">问问</a></li>
+				<li><a href="#">团购</a></li>
+				<li><a href="#">新闻</a></li>
+				<li><a href="#">地图</a></li>
+				<li id="more"><a href="#">更 多 &gt;&gt;</a></li>
+			</ul>
+		</div>
+	</div>
+	</center>
+	<center>
+	<p style="height:44px;">&nbsp;</p>
+	<div id=s>
+		<form action ="/q?" id = "flpage" name = "flpage">
+			<input type="text" value=" " size=50px;/>
+			<input type="submit"  value="搜搜">
+		</form>
+	</div>
+	</center>
+</body>
+</html>

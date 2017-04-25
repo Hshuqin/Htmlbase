@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>导入样式</title>
+	<style>
+	@import "css/link.css"</style> 
+	<style>
+	strong {
+     color: red;
+     }
+
+	h2 {
+     color: red;
+     background-color: blue;
+     background-image: url(images/p4sb.jpg);
+     background-repeat: repeat-x;
+     background-position:center;
+     background-attachment:fixed；/*默认是scroll，即背景图片随页面一起滚动*/
+     }
+
+	h2 strong {
+     color: blue;
+     background-color:red;
+     padding:40px;            /*内边距*/
+     }
+     body{
+     	background-image: url(images/1.jpg);  /*取背景图片的不懂之处url（）*/
+     	background-color: gray;/*背景色(填充）*/
+     	background-repeat: no-repeat;/*图片是否平铺，可以向x方向和向y方向，如repeat-x*/
+     	background-size: cover;    /*也可以900 800，这样设置size，cover：保持背景图像本身的宽高比，将图片缩放到正好完全覆盖所定义的区域*/
+     	background-attachment: fixed;/*默认是scroll，即背景图片随页面一起滚动*/
+     	background-position: top center;/*背景图片位置的设置*/
+     	background-origin: padding;/*从padding区域开始显示背景，border；从border区域开始显示背景，content，从content（内容）区域开始显示背景*/
+     	background-clip: content;/*从padding,border,content区域开始显示背景。no-clip：从边框区域外裁剪背景*/
+     }
+	</style>
+</head>
+<body>
+	<h1>css学习</h1>                                       <!--CSS 派生选择器,注意具体区别-->
+	<p>此段落使用导入样式修饰</p>
+    <p>The strongly emphasized word in this paragraph is<strong>red</strong></p>
+    <h2>This subhead is also red.</h2>   <!--background-image:加图片，repeat表示平铺，向x或向y方向上重复,默认仅显示一次。position表示取图像的位置，可用百分比表示，如50%，50%表示中间center。也可以position：50px，50px，表示左上角向右50像素，向下50像素。-->
+    <br>
+    <br><!--background:::如果文档比较长，那么当文档向下滚动时，背景图像也会随之滚动。当文档滚动到超过图像的位置时，图像就会消失。
+您可以通过 background-attachment 属性防止这种滚动。通过这个属性，可以声明图像相对于可视区是固定的（fixed），因此不会受到滚动的影响,默认是scroll-->
+    <br>
+	<h2>The strongly emphasized word in this subhead is<strong>blue</strong></h2>   <!--padding,内边距-->
+    <p>..</p>
+	<p>..</p>
+	<p>..</p>
+	<p>..</p>
+	<p>..</p>
+	<p>..</p>
+	<p>..</p>
+	<p>..</p>
+	<p>..</p>
+	<p>..</p>
+	<p>..</p>
+	<p>..</p>
+	<p>..</p>
+	<p>..</p>
+	<p>..</p>
+	<p>..</p>
+	<p>..</p>
+	<p>..</p>
+	<p>..</p>
+	<p>..</p>
+	<p>..</p>
+	<p>..</p>
+	<p>..</p>
+	<p>..</p>
+	<p>..</p>
+	<p>..</p>
+	<p>..</p>
+
+	
+</body>
+</html>

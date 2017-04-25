@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>超级链接样式</title>
+	<style>
+	a{
+		color:blue;
+		text-decoration: none;/*a,的样式*/
+		background-color: grey;                   /*设置背景颜色*/
+		background-image: url(images/4.jpg);/*设置超链接的背景图*/
+	}	
+	a:link{
+		color:green;
+		text-decoration: none;/*定义a对象在未被访问前的样式*/
+	}
+	a:hover{
+		color:orange;
+		text-decoration: underline;/*定义a对象在其鼠标悬停的样式*/
+		background-image: url(images/3.png);
+	}
+	a:active{
+		color:yellow;
+		text-decoration: none;/*定义a对象被用户激活时的样式（在鼠标单击与释放之间的事件）*/
+	}
+	a:visited{
+		color:red;
+		text-decoration: none;/*定义a对象在其链接地址已被访问过时的样式*/
+	}
+	body{
+		overflow-x:hidden;
+		overflow-y: scroll;
+		scrollBar-face-color:green;            /*滚动条的颜色*/
+		scrollBar-hightLight-color:red;         /*滚动条亮边框的颜色*/
+		scrollBar-3dLight-color:orange;          /*滚动条的亮边颜色*/
+		scrollBar-dark-shadow-color:blue;         /*滚动条暗边框*/
+		scrollBar-shadow-color:yellow;            /*滚动条暗边颜色*/
+		scrollBar-arrow-color:purple;           /*滚动条上下两边的颜色*/
+		scrollBar-track-color:gray;       /*滚动区域的颜色*/                       /*兼容性：IE 5.5+/
+		scrollBar-bace-color:pink;        /*滚动条基准的颜色*/
+	}
+	div{
+		background-color: pink;
+		width: 300px;
+		padding:2px;
+		border:#000000 2px solid; 
+	}
+	ol{                   /*有序（无序ul：跟html一样，格式如下）*/
+		font-family:Arial;
+		font-size: 20px;
+		color:#00458c;
+		list-style-type:none;/*decimal阿拉伯数字圆，lower-roman:小写罗马数字（upper大写），lower-alpha小写英文字母（upper大写），none无*/ 
+	}
+	div li a:link,div li a:visited{
+		list-style-image:url(images/5.jpg);                    /*图标过大*/
+		padding-left: 25px;
+		width: 600px;
+		background-color: #F0F0F0；
+		color:#461737;
+	}
+	div li a:hover{
+		list-style-image:url(images/5.jpg);                    /*动态菜单效果*/
+		padding-left: 25px;
+		width: 600px;
+		background-color: #7c7c7c；
+		color:#ffff00;
+	}
+	.list1{                                                  /*缩进图片列表*/
+		list-style-position: inside;    /*列表项目标记放置在文本以内，且环绕文本根据标记对齐*/
+	}
+	.list2{
+		list-style-position: outside;    /*列表项目标记放置在文本以外，且环绕文本不根据标记对齐*/
+	}
+	</style>
+</head>
+<body>
+	<center>
+	<p>鼠标样式</p>
+	<a href=# title = "黄树勤是个大帅哥">了解他</a>|<a href =#>关于他</a><!--title 当鼠标留在超链接上方时，提示信息-->
+	<br>
+	<a href="" style = "cursor:wait;" title = "sjdsassasadsad">等待</a>
+	<br>
+	<a href="" style = "cursor:help" title = "sjdsassasadsad">帮助</a>
+	<br>
+	<a href="" style = "cursor:move" title = "sjdsassasadsad">移动</a>
+	<br>
+	<a href="" style = "cursor:crosshair;" title = "sjdsassasadsad">定位十字</a>
+	<br>
+	<a href="" style = "cursor:text" title = "sjdsassasadsad">文本</a>
+	<br>
+	<a href="" style = "cursor:default" title = "sjdsassasadsad">默认鼠标</a>
+	<br>
+	<a href="" style = "cursor:n-resize" title = "sjdsassasadsad">箭头朝上双向</a>
+	<br>
+	<a href="" style = "cursor:s-resize" title = "sjdsassasadsad">箭头朝下双向</a>
+	<br>
+	<a href="" style = "cursor:ne-resize" title = "sjdsassasadsad">箭头右上双向</a>
+	<br>
+	<a href="" style = "cursor:pointer" title = "sjdsassasadsad">指示</a>
+	<br>
+	<a href="" style = "cursor: url('images/4.jpg')" >自定义</a>                                              <!--有问题？？？？-->
+	</center>
+
+	<center>
+		<div>
+		<p>娱乐焦点</p>
+		<ol>
+			<li><a href="#">换季激恼“供述吧”</a></li>
+			<li><a href="#">snfakfslafasfs</a></li>
+			<li><a href="#">dafdfdsf</a></li>
+			<li><a href="#">法法师法卡卡”</a></li>
+			<li><a href="#">发发看法的福地发生反对党</a></li>
+		</ol>
+		</div>
+	</center>
+	<p>
+	...
+	</p>
+	<p>
+	...
+	</p>
+	<p>
+	...
+	</p>
+	<p>
+	...
+	</p>
+	<p>
+	...
+	</p>
+	<p>
+	...
+	</p>
+	<p>
+	...
+	</p>
+	<p>
+	...
+	</p>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+</head>
+<body>
+	用户名<input type="text"      id ="loginname" /><br>
+	密  码<input type="password"  id ="loginpass" /><br>
+	<input id="tijiao" type="button" value="提 交" />
+	<script>
+		
+		/*function CheckLogin()
+		{
+			var name = document.getElementById("loginname").value();//var是用来声明变量的
+			var pass = document.getElemnetById("loginpass").value();
+
+			需从 JavaScript 访问某个 HTML 元素，可以使用 document.getElementById(id) 方法。
+			
+			if (name == "admin" || pass == "admin"){
+				alert("恭喜，登入成功");
+			}
+			else
+			{
+				alert("登入失败");
+			}
+			alert(1);
+		}*/
+		var name = document.getElementById("loginname").value;//var是用来声明变量的
+		var pass = document.getElemnetById("loginpass").value;
+		document.getElementById("tijiao").onclick=function(){
+			alert(name);
+		}
+	</script>
+</body>
+</html>
