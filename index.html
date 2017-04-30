@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>text</title>
+	<style>
+	.i{
+		background-image:url(images/ss.jpg);
+		background-attachment: fixed;
+	}	
+	</style>
+</head>
+<body  class="i" >    <!--网页背景-->
+
+	<header>     <!--    意思是：-->
+	<h1>欢迎访问主页</h1>
+	</header>
+	<h2>清明</h2>
+	<h3>清明</h3>
+	<h4>清明</h4>
+	<h5>清明</h5>
+	<h6>清明</h6><!--h1-6标题元素文字大小依次递减，1位级别最高，文字最大，h6最低-->
+
+	<p>
+	清明时节雨纷纷，</br>              <!--br换行标记符-->
+	路上行人欲断魂。<br />
+	借问酒家何处有，<br>
+	牧童遥指杏花村。<br>
+	<hr />                             <!--添加水平线-->
+	<hr />                             <!--添加水平线-->
+	<hr />
+		<p><b>粗体文字的显示效果</b></p>
+		<p><em>强调文字的显示效果</em></p>
+		<p><strong>加强调文字的显示效果</strong></p>
+		<i>斜体文字的显示效果</i>
+	</p>
+	<P>这里的标签大小写不一样</p>           <!--p的大小写不一样,html5可以允许-->
+	<!--上标显示-->
+	<p>c=a<sup>2</sup>+b<sup>2</sup></p>
+	<!--下标显示-->
+	<p>H<sub>2</sub>+O—>H<sub>2</sub>O</p>
+	<dl>
+		<dt>单人间</dt>
+		<dd>399元<small>含早餐，不含税</small></dd><!--dl自定义列表标签，dt开始写，dd换行，空出格-->
+		<dt>双人间</dt>
+		<dd>599元<small>含早餐，不含税</small></dd>
+	</dl>
+	<p>苹果的单价<del>不是一斤6元</del>是每斤8元</p>
+<p>春眠不觉晓</p><!--p为换段标记符-->
+<bdo dir = "rtl">春眠不觉晓</bdo><!--表示文字从左到右显示righttoleft-->
+<p><bdo dir = "ltr">春眠不觉晓</bdo></p><!--表示文字从右到左显示-->
+<p>
+	
+</p>
+<ul><!--建立无序列表-->
+	<li>项目需求</li>
+	<li>系统分析
+		<ul>
+		<li>网站的定位</li>
+		<li>内容的收集
+			<ul type  = "disc">
+				一些列内容。
+			</ul>
+		</li>
+		</ul>
+	</li>
+	<li>网页草图
+		<ul type = "square"><!--建立不同类型的无序列表。有disc，square,circle这几类-->
+		<li>制作网页草图</li>
+		<li>将草图转换成网页</li>
+		</ul>
+	</li>
+	<li>站点建设</li>
+</ul>	
+<ol><!--建立有序列表-->
+	<li>数字列表</li><!序-->
+	<li>苹果</li>--默认状态是数字的顺
+	<li>香蕉</li>
+	<li>西瓜</li>
+</ol>
+<ol type = "A">
+	<li>字母列表</li>
+	<li>苹果</li>
+	<li>香蕉</li>
+	<li>西瓜</li>
+</ol>
+	<img src="images/p4sb.jpg" alt="黄树勤和sdkslddkfd"  height = "100"  width = "200"><!--火狐浏览器不支持alt功能-->     
+<P>	<img src="images/p4sb.jpg" height = "100"  width = "200" align="bottom">底部学生本人根据自身条件及奖助学金、荣誉称号的设立情况，向年级学生会学习部提出书面申请，年级学生会学习部汇总学生申请情况，报辅导员学生本人根据自身条件及奖助学金、荣誉称号的设立情况，向年级学生会学习部提出书面申请，年级学生会学习部汇总学生申请情况，报辅导员学生本人根据自身条件及奖助学金、荣誉称号的设立情况，向年级学生会学习部提出书面申请，年级学生会学习部汇总学生申请情况，报辅导员</P><!--bottom是默认的对齐方式-->
+<p> 图片在<img src="images/p4sb.jpg" height = "100"  width = "200" align="middle">中间</p>
+<p> 图片在<img src="images/p4sb.jpg" height = "100"  width = "200" align="top">顶部</p>
+
+<h5>绝对URL和相对URL</h5>
+<p>
+<h4>HTTP路径：</h4>
+	单击<a href = "http://www.webDesign.com/index.html">绝对URL</a>连接到webDesign网站首页<br /><!--超链接到别的的网站-->
+	单击<a href = "eg1.html">想用文件夹的URL</a>链接到相同文件夹中的第二个页面<br />
+	单击<a href = "../text/index.html">不同文件夹得URL</a>链接到不同文件夹中的第三个页面<br /><!--可以跳转到指定的html-->
+	单击链接到<a href ="http:/www.baidu.com/index.html">链接</a>             <!--最普通的链接格式-->
+	单击链接到<a href ="http:/www.baidu.com/index.php#d">链接</a>             <!--链接到文件的某一个片段的位置上-->
+	单击链接到<a href ="http:/www.baidu.com/index.php?tn=myppcb&bar=11">链接</a>             <!--传递某个参数，使用相应的程序来处理相关内容-->
+</p>
+<P>
+<h4>FTP路径：</h4>
+	链接中使用FTP路径：<a href = "ftp://ftp.lele.cn" target = "_blank">链接内容</a> <br/><!--FTP还是不是很懂，_blank值代表在新窗口中显示-->
+    <h4>电子邮件路径：</h4>                                                                                   
+    使用电子邮件路径 ：<a href = "mailto:985916410@qq.com">黄树勤的邮箱</a>    <!--mailto:后面跟着邮箱地址，点击后，会弹出发送邮件的对话框-->
+</P>
+<p>                                        <!--_blank表示在新窗口显示超链接页面，_self值表示在自身窗口，在省略target属性时，默认取值为_self-->
+	<a href = "http:/www.baidu.com">搜索</a>
+	<a href = "">登入</a>|<a href = "">注册</a>
+</p>
+<p>
+<h5>创建图像超链接</h5>
+<a href = "http://www.hao123.com"> <img src = "images/psb.jpg"/></a>
+</p>
+
+<p>
+<h5>浮动框架中显示百度网站</h5>
+	<iframe src = "http://www.baidu.com"></iframe><!--浮动框架在页面中又创了一个窗口，默认情况下，宽度高度为220x120，调整应使用CSS样式-->
+</p>
+<h4>网页表单的设计</h4>
+<form>
+下面是输入用户登入信息<br/>             <!--登录信息，-->
+用户名称<input type ="text" name = "user" size = "20" maxlength = "15" required="required"><br/>
+用户密码<input type ="password" name = "password"><br/>  <!--required规定必须在提交之前填写，适用于text，search，url，email，password，date，pickers，number，checkbox,radio等-->
+<input type = "submit" value = "登录">
+<input type = "button" value = "普通按钮">
+<input type = "reset" value = "重置">
+</form>
+<form>
+请输入你的姓名：<input type = "text" name = "yourname" size = "40" maxlength = "15" value="你的姓名"><br/><!--size 默认20，可以拉长文本框长度-->
+请输入你的地址：<input type = "text" name = "youradr" size = "20" maxlength = "15"><br/>                 <!--maxlenth定义最多输入的字符数-->
+</form>                                                                                                      <!--value 定义文本框的初始值-->
+<h6>多行文本输入框</h6>
+<p>            <!--记住几个类型type，text表示单行文本框，submit表示提交的按钮，button表示普通按钮，reset表示重置按钮，password表示密码区自动成暗文，
+name的属性是定义名称，value是值，即显示内容-->
+<form>
+请输入您最新的工作情况<br>
+<textarea name="yourwork" cols = "50" rows = "1" ></textarea><br><!--多行的文本框textarea,cols表示宽度，rows 表示行数，wrap表示-->
+<input type = "submit" value = "提交">                            <!--当输入的内容大于文本域时显示的方式,具体使用有待了解-->
+</form>
+</p>
+<!--记住几个类型type，checkbox表示复选框，radio表示单选框，number 表示数值输入框（可以使用max,min规定最大值和最小值），date（month week time datetime datetime-local属性一样）表示日期，range滚动控件（可以使用max,min规定最大值和最小值）    如下所示-->
+<form>
+<p>
+<h6>复选框</h6>
+<input type ="checkbox" name = "book" value = "Book1">网站编程<br/>
+<input type ="checkbox" name = "book" value = "Book2">网站编程<br/>
+<input type ="checkbox" name = "book" value = "Book3">网站编程<br/>
+<input type ="checkbox" name = "book" value = "Book5">网站编程<br/>
+<input type ="checkbox" name = "book" value = "Book6">网站编程<br/>
+</p>
+<h6>添加时间类型表单，数值输入框</h6>
+此网站我曾经来
+<input type = "number" name = "shuzi" min = "0" max = "5"/>次了哦！<br>
+<br>
+<form>
+请输入购买商品的日期：<br>
+<input type = "date" name = "user_date"/>                         <!--显示不出-->
+</form>
+<br>
+英语成绩公布了！我的班级名次为：
+<input type = "range" name = "ran" min ="1" max=10"">
+</form>
+<form>
+<p>
+<h6>单选框</h6>
+<input type ="radio" name = "book" value = "Book1">网站编程<br/>
+<input type ="radio" name = "book" value = "Book2">网站编程<br/>
+<input type ="radio" name = "book" value = "Book3">网站编程<br/>
+<input type ="radio" name = "book" value = "Book5">网站编程<br/>
+<input type ="radio" name = "book" value = "Book6">网站编程<br/>
+</p>
+</form>
+<p>
+<form>
+<h6>下拉列表选择框</h6>
+请你选择你感兴趣的图书类型：<br/>
+<select name = "fruit" size = "2"  multiple><!--size表示下拉行数，name定义下拉选择框的名称，value表示选择框里的值，multiple表示可以多选-->
+	<option value = "Book1">网站编程          <!--默认单选，select表示默认已经选中本选项-->
+	<option value = "Book1">网站编程
+	<option value = "Book1">网站编程
+	<option value = "Book1">网站编程
+	<option value = "Book1">网站编程
+	</select>
+</form>
+</p>
+<p>
+<form>
+<h6>添加普通按钮，以及控制处理脚本工作</h6>                        <!--onClick表示单击行为-->
+点击下面的按钮，把文本框1的内容拷贝到文本框2中:<br>
+文本框1：<input type ="text" id = "field1" value = "学习HTML5的技巧"><br>
+文本框2：<input type ="text" id = "field2"><br>
+<input type = "button" name ="..." value = "copy" onClick = "document.getElementById('field2').value = document.getElementById('field1').value">
+</form>
+</p>
+<form>
+<br>
+请输入网址：
+<input type = "url" name = "userurl"/><br><!--会自动验证URL的值-->
+请输入您的邮箱地址：
+<input type = "email" name = "user_email"/><br><!--会自动验证email域的值-->
+<input type = "submit" value = "提交"><br>
+</form>
+<br>
+<h5>网页表格的设计</h5>
+<br>
+<table border="4" bgcolor="green" background = ""><!--border的数值为0，表格没有边框，可能出现不对齐，为1时有边框，越大，边框颜色越重，加粗,bgcolor 给背景加颜色，background 加背景图片-->
+<caption>带有标题的表格</caption><!--在表格上面加上标题-->
+	<tr>
+	<th>AAAAAA1</th>
+	<td>B1</td>
+	<td bgcolor="red">C1</td><!--对单元格设置背景-->
+	<td>D1</td>
+	</tr>
+	<tr>    <!--th表示表头，即文字被加黑了，，，td表示普通的单元格-->
+	<th>A2</th>
+	<td>B2</td>
+	<td>C2</td>
+	</tr>
+	<tr>
+	<th>A3</th>
+	<td>B3</td>
+	<td>C3</td>
+	</tr>
+</table>
+<table border="4"  bgcolor = "yellow" background = "images/psb2.jpg"><!--border的数值为0，表格没有边框，可能出现不对齐，为1时有边框，越大，边框颜色越重，加粗,bgcolor 给背景加颜色，background 加背景图片-->
+<caption>带有标题的表格</caption><!--在表格上面加上标题-->
+	<tr>
+	<th colspan="2">A1B1</th>
+	<td bgcolor="red">C1</td><!--对单元格设置背景-->
+	<td>D1</td>
+	</tr>
+	<tr>    <!--th表示表头，即文字被加黑了，，，td表示普通的单元格-->
+	<th rowspan="2">A2<br>A3</th>
+	<td>B2</td>
+	<td>C2</td>
+	</tr>
+	<tr>
+	<td>B3</td>
+	<td>C3</td>
+	</tr>
+	<tr>
+	<td colspan = "4" align="right" >总计</td>
+	</tr>
+</table>
+<p>
+<audio src="music/1.mp3" controls="controls" autoplay="autoplay">	<!--自动播放1.mp3-->
+</audio>
+</p>
+<p>
+<audio src="music/2.mp3" controls="controls" preload = "auto">	<!--不知道播放2.mp3-->
+</audio>
+</p>
+<p>
+<audio controls="controls" >                   <!--controls 控制插件，进行显示。 source进行多首mp3预播放-->
+<source src="music/1.mp3" type="audio/mp3" >	
+<source src="music/2.mp3" type="audio/mp3" >	
+</audio>
+</p>
+<p>
+<video controls="controls" preload = "auto"  loop = "loop" width = "200" height = "160" >
+<source src = "video/1.mp4">	    <!--loop 循环播放-->
+</video>
+</p>
+<p style = "color:red;font-size:20px;text-decoration: underline;text-align:center">此段落使用行内样式修饰</p>
+               <!--内嵌样式和链接样式以及导入样式，在别的index.html1阐释，链接样式不用加style标签，其他都要-->
+
+
+
+
+
+               
+<footer>作者  黄树勤 联系方式：不告诉你！！！</footer>
+</body>
+</html>
